@@ -1,0 +1,22 @@
+@media (max-height: 850px){
+    body{
+        min-height: 150dvh;
+    }
+}
+
+@media (max-height: 680px){
+    body{
+        min-height: 200dvh;
+    }
+}
+
+@media (max-height: 510px){
+    body{
+        min-height: 250dvh;
+    }
+
+    div.nomes{
+        height: 70%;
+        width: 290px;
+    }
+}
