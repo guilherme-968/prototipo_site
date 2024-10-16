@@ -32,7 +32,7 @@ header img{
 
 
 div.container{
-    margin: 3% 20% 0 20%;
+    margin: 2% 20% 0 20%;
     height: 100%;
     background-color:transparent;
 }
@@ -61,6 +61,7 @@ div.sla{
     height: 100%;
     width: 135%;
     background-color: transparent;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 1600px){
