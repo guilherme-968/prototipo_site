@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="/download.png" alt="">
+    </header>
+    <div class="cont">
+        <h1>
+            Relação entre o índice criminal e o índice de avaliação nacional do Brasil
+        </h1>
+        <p>
+            Conforme mostram os dados do IPEA (Instituto de Pesquisa Econômica Aplicada) e FBSP (Fórum Brasileiro de Segurança Pública), nos últimos anos ocorreram mudanças referente ao índice de criminalidade e ao índice de escolaridade, onde o índice de criminalidade diminuiu aproximadamente 18,3% entre os anos de 2011 e 2021. Enquanto os diferentes índices referentes a escolaridade diminuíam ou aumentavam de maneira positiva, dependendo do contexto, como a queda do índice de analfabetismo em 0,5% entre 2019 e 2022 ou o aumento do indice de pessoas com mais de 25 anos concluindo o ensino médio ou superior, sendo 53,2% adultos que concluíram o ensino médio até o ano de 2021 e 19,2% que concluíram o ensino superior até o ano de 2022, conforme ilustra os dados da PNAD Continua (Pesquisa Nacional de Amostra de Domicílios Contínua) e do IBGE (Instituto Brasileiro de Geografia e Estatística).
+        </p>
+        <br>
+        <p>
+            A criminalidade é um tópico que vem sendo estudado continuamente até os dias atuais. Foram realizados diversos estudos para saber a razão da mudança desse índice em diversos locais e foi determinado que fatores como economia, escolaridade, analfabetismo, civilização, cultura, fome e desnutrição são essenciais para a mudança do índice. Já na educação é possível ver que seus diferentes índices também mudaram com o passar dos anos, o que gera uma dúvida sobre a correlação destes tópicos.
+        </p>
+        <br>
+        <p>
+            Tendo em mente essa dúvida, foi realizado uma pesquisa em diferentes bancos e dados e feito uma síntese desses dados para analisar se existe a correlação destes índices, confira ao lado os resultados.
+        </p>
+        <button>
+            <a href="/graficos.html">
+                Ver sintese
+            </a>
+        </button>
+    </div>
+
+    <footer>
+        <h1>Membros</h1>
+        <ul class="membros">
+            <li>
+                <p id="n1">Edwin Minoru</p id="">
+            </li>
+            <li>
+                <p id="n2">Guilherme Souza</p>
+            </li>
+            <li>
+                <p id="n3">Raul Silva</a>
+            <li>
+                <p id="n4">Thiago Danilo</p>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="nomes" id="ed">
+        <div class="btn_fechar">
+            <button class = "fecharBtn">
+                X
+            </button>
+        </div>
+        <img src="/download.png" alt="">
+        <h3>Nome:<br> Edwin Minoru</h1><br>
+        <h3>Matricula:<br> 7782429</h3><br>
+        <h3>Email:<br> edwinsasaki@unisantos.br</h3><br>
+
+    </div>
+    <div class="nomes" id="gui">
+        <div class="btn_fechar">
+            <button class = "fecharBtn">
+                X
+            </button>
+        </div>
+        <img src="/download.png" alt="">
+        <h3>Nome:<br> Guilherme Souza</h1><br>
+        <h3>Matricula:<br> 7329394</h3><br>
+        <h3>Email:<br> guihermessantos@unisantos.br</h3><br>
+
+    </div>
+    <div class="nomes" id="rau">
+        <div class="btn_fechar">
+            <button class = "fecharBtn">
+                X
+            </button>
+        </div>
+        <img src="/download.png" alt="">
+        <h3>Nome:<br> Raul Silva</h1><br>
+        <h3>Matricula:<br> 8883414</h3><br>
+        <h3>Email:<br> raulssilva@unisantos.br</h3><br>
+
+    </div>
+    <div class="nomes" id="danilow">
+        <div class="btn_fechar">
+            <button class = "fecharBtn">
+                X
+            </button>
+        </div>
+        <img src="/download.png" alt="">
+        <h3>Nome:<br> Thiago Danilow</h1><br>
+        <h3>Matricula:<br> 9979454</h3><br>
+        <h3>Email:<br> thiagodaraujo@unisantos.br</h3><br>
+
+    </div>
+    <script>
+        function reseteMembros() {
+            document.getElementById("ed").style.display = "none";
+            document.getElementById("gui").style.display = "none";
+            document.getElementById("rau").style.display = "none";
+            document.getElementById("danilow").style.display = "none";
+    
+        }
+        document.getElementById("n1").addEventListener("click", function() {
+            reseteMembros();
+            document.getElementById("ed").style.display = "block";
+        });
+        
+        document.getElementById("n2").addEventListener("click", function() {
+            reseteMembros();
+            document.getElementById("gui").style.display = "block";
+        });
+
+        document.getElementById("n3").addEventListener("click", function() {
+            reseteMembros();
+            document.getElementById("rau").style.display = "block";
+        });
+
+        document.getElementById("n4").addEventListener("click", function() {
+            reseteMembros();
+            document.getElementById("danilow").style.display = "block";
+        });
+
+        document.querySelectorAll(".fecharBtn").forEach(button => {
+            button.addEventListener("click", function(event) {
+                reseteMembros();
+            });
+        });
+    </script>
+</body>
