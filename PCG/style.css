@@ -8,12 +8,11 @@
 
 body{
     background-color: #f5f5f5;
-    min-height: 100dvh;
+    min-height: 120dvh;
     max-height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
-    overflow: auto;
 }
 
 header{
@@ -49,6 +48,11 @@ div.container p{
     font-size: 1rem;
 }
 
+div.sla{
+    height: 100%;
+    width: 135%;
+    background-color:transparent;
+}
 
 .container_graficos{
     display: grid;
@@ -60,7 +64,7 @@ div.container p{
 
 @media (max-width: 1600px){
     body{
-        min-height: 150dvh;
+        min-height: 170dvh;
         max-height: auto;
     }
     .container_graficos{
@@ -72,7 +76,42 @@ div.container p{
     .container_graficos div.tabela_info{
         min-height: 200px;
     }
+
+    div.sla{
+        height: 100%;
+        width: 100%;
+        background-color:transparent;
+    }
     
+
+    @media (max-height: 800px){
+        body{
+            min-height: 200dvh;
+        }
+    }
+
+    @media (max-height: 630px){
+        body{
+            min-height: 250dvh;
+        }
+    }
+    
+    @media (max-height: 500px){
+        body{
+            min-height: 300dvh;
+        }
+    
+        div.nomes{
+            height: 70%;
+            width: 250px;
+        }
+    }
+
+    @media (max-height: 420px){
+        body{
+            min-height: 350dvh;
+        }
+    }
 }
 
 div.graficos div.barra_pesquisa{
@@ -97,6 +136,7 @@ div.barra_pesquisa button{
 .barra_pesquisa .ativo{
     background-color: #20375c;
     color: white;
+    transform: translateY(-5px);
 }
 
 div.barra_pesquisa button:hover{
@@ -194,21 +234,10 @@ footer ul p{
 @media (max-width: 600px){
     div.nomes{
         height: 300px;
-        width: 250px;
+        width: 290px;
     }
     div.container{
         margin: 10% 20% 0 20%;
-    }
-}
-
-@media (max-height: 400px){
-    body{
-        min-height: 300dvh;
-        max-height: auto;
-    }
-    div.nomes{
-        height: 70%;
-        width: 250px;
     }
 }
 
