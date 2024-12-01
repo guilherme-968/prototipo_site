@@ -133,6 +133,9 @@ div.tabela_info{
 .text {
     margin-top: 20px;
 }
+.sla p a{
+    color: #20375c;
+}
 
 footer{
     background-color: #ffffff;
